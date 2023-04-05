@@ -1,0 +1,25 @@
+Yes, Ubuntu has a built-in text-to-speech utility called "espeak". You can use it to read out sentences aloud from the command line or write a script to read out text from a file.
+
+To install espeak, open a terminal and type the following command:
+
+```
+sudo apt-get install espeak
+```
+
+Once installed, you can use the following command to read out a sentence aloud:
+
+```
+espeak "Hello, this is a test."
+```
+
+Espeak also has several options that can be used to adjust the speed, pitch, and volume of the voice. You can find more information about these options by typing the following command:
+
+```
+man espeak
+```
+
+There are also several graphical applications available in Ubuntu that can read out text aloud, such as "Orca" and "GNOME Speech". These applications provide a more user-friendly interface and can be configured to read out text from different sources, such as web pages, documents, and emails. You can install these applications from the Ubuntu Software Center or by using the following command:
+
+```
+sudo apt-get install gnome-orca gnome-speech-tools
+```
