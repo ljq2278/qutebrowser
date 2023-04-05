@@ -65,9 +65,11 @@ class WebEngineAction(browsertab.AbstractAction):
 
     def save_page(self):
         """Save the current page."""
+        print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ save_page')
         self._widget.triggerPageAction(QWebEnginePage.WebAction.SavePage)
 
     def show_source(self, pygments=False):
+        print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ show_source')
         if pygments:
             self._show_source_pygments()
             return

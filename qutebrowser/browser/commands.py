@@ -1386,6 +1386,7 @@ class CommandDispatcher:
         tab = self._current_widget()
 
         if url:
+            print('urlurlurlurlurlurlurlurlurlurlurlurlurlurlurlurlurlurl webengine_download_manager.get_mhtml')
             if mhtml_:
                 raise cmdutils.CommandError("Can only download the current "
                                             "page as mhtml.")
@@ -1398,10 +1399,12 @@ class CommandDispatcher:
                 webengine_download_manager = objreg.get(
                     'webengine-download-manager')
                 try:
+                    print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ webengine_download_manager.get_mhtml')
                     webengine_download_manager.get_mhtml(tab, target)
                 except browsertab.UnsupportedOperationError as e:
                     raise cmdutils.CommandError(e)
             else:
+                print('************************************* download_manager.get_mhtml')
                 download_manager.get_mhtml(tab, target)
         else:
             qnam = tab.private_api.networkaccessmanager()
@@ -1409,7 +1412,7 @@ class CommandDispatcher:
             suggested_fn = downloads.suggested_fn_from_title(
                 self._current_url().path(), tab.title()
             )
-
+            print('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& webengine_download_manager.get_mhtml')
             download_manager.get(
                 self._current_url(),
                 qnam=qnam,

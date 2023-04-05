@@ -1739,6 +1739,8 @@ hints.selectors:
       - 'area[href]'
       - 'link[href]'
       - '[role="link"][href]'
+    button_poe_send:
+      - 'button[class="Button_button__GWnCw ChatMessageInputView_sendButton__reEpT"]'
     images:
       - 'img'
     media:
@@ -2525,7 +2527,7 @@ url.start_pages:
   type:
     name: ListOrValue
     valtype: FuzzyUrl
-  default: ["https://start.duckduckgo.com"]
+  default: ["https://poe.com"]
   desc: Page(s) to open at the start.
 
 url.yank_ignored_parameters:
